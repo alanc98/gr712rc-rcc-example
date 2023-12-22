@@ -54,7 +54,7 @@ BINARY_TARGET    = rki.bin
 ## Objects to build
 ##
 OBJS = rki_init.o rki_drvmgr.o
-OBJS += hw_gpio.o watchdog.o 
+OBJS += watchdog.o 
 OBJS += gpio_demo.o
 OBJS += demo_tasks.o
 

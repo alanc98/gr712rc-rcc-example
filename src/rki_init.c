@@ -36,7 +36,7 @@
 ** External functions
 */
 int  rki_init_drvmgr(void);
-void init_gpio_isr(void);
+void init_gpio(void);
 int  demo_start(void);
 void service_watchdog();
 
@@ -97,8 +97,8 @@ rtems_task Init (rtems_task_argument ignored)
    demo_start();
 #endif
 
-   /* GPIO */ 
-   init_gpio_isr();
+   /* Setup GPIO */ 
+   init_gpio();
 
    /* Feed local watchdog */
    while (1)
